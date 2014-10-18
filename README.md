@@ -1,4 +1,4 @@
-# busybox-storage
+# docker-storage
 
 Persistence storage for containers.
 
