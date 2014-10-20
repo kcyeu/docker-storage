@@ -7,8 +7,7 @@ Persistence storage for containers.
 Two volumes are created `/var/docker-data1` and `/var/docker-data2`. To run the container, do the following:
 
 ```
-sudo docker run -d --name docker-storage kcyeu/busybox-storage
-```
+sudo docker run -d --name docker-storage kcyeu/storag
 
 You can then use the `--volumes-from` flag to mount the volumes in another container.
 
