@@ -38,21 +38,17 @@
 <p>Two volumes are created <code>/var/docker-data1</code> and <code>/var/docker-data2</code>. To run the container, do the following:</p>
 
 <pre><code>sudo docker run -d --name docker-storage kcyeu/storag
-
-You can then use the `--volumes-from` flag to mount the volumes in another container.
-
 </code></pre>
 
-<p>sudo docker run -d --volumes-from docker-storage --name jenkins-01 kcyeu/jenkins</p>
+<p>You can then use the <code>--volumes-from</code> flag to mount the volumes in another container.</p>
 
-<pre><code>
-And another:
-
+<pre><code>sudo docker run -d --volumes-from docker-storage --name jenkins-01 kcyeu/jenkins
 </code></pre>
 
-<p>sudo docker run -d --volumes-from docker-storage --name jenkins-01 kcyeu/jenkins</p>
+<p>And another:</p>
 
-<pre><code></code></pre>
+<pre><code>sudo docker run -d --volumes-from docker-storage --name jenkins-01 kcyeu/jenkins
+</code></pre>
       </section>
     </div>
     <footer>
