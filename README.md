@@ -8,6 +8,7 @@ Two volumes are created `/var/docker-data1` and `/var/docker-data2`. To run the 
 
 ```
 sudo docker run -d --name docker-storage kcyeu/storag
+```
 
 You can then use the `--volumes-from` flag to mount the volumes in another container.
 
